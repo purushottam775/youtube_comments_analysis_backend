@@ -1,0 +1,18 @@
+{
+    "😐": "neutral",
+    "🤷": "neutral",
+    "💤": "neutral",
+    "😶": "neutral",
+    "😑": "neutral",
+    "🙂": "neutral",
+    "😕": "neutral",
+    "😞": "negative",
+    "😊": "positive",
+    "❤️": "positive",
+    "👍": "positive",
+    "😍": "positive",
+    "😡": "negative",
+    "👎": "negative",
+    "💔": "negative",
+    "😠": "negative"
+}
