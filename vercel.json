@@ -6,11 +6,8 @@
       "use": "@vercel/python"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.py"
-    }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1.py" }
   ],
   "env": {
     "YOUTUBE_API_KEY": "@youtube_api_key"
