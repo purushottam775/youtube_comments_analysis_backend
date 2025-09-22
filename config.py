@@ -1,11 +1,11 @@
-# import os
-
-# # Set your YouTube API key here (or via environment variable)
-# YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY', 'AIzaSyCREneOfIQUTDTz5H-uCrs40wwDJ3Ecsx0')
-
-
 import os
+from dotenv import load_dotenv
 
-YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY', 'AIzaSyCREneOfIQUTDTz5H-uCrs40wwDJ3Ecsx0')
+# Load environment variables from .env file
+load_dotenv()
+
+# Set your YouTube API key from environment variable
+YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
+
 # System Limits
 MAX_COMMENTS = 1000  # Increased comment limit
