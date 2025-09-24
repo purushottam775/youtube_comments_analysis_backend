@@ -16,13 +16,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = Flask(__name__)
-# Configure CORS to allow requests from the frontend
-CORS(app, origins=[
-    "https://your-frontend.vercel.app",  # Production frontend URL
-    "http://localhost:3000",             # Local development frontend
-    "http://localhost:5173"              # Vite default port
-])
+
 
 @app.route("/api/comments", methods=["GET"])
 def get_comments():
