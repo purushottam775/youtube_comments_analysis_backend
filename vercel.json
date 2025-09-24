@@ -2,24 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**/*.py",
+      "src": "app.py",
       "use": "@vercel/python"
     }
   ],
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1.py" }
-  ],
-  "env": {
-    "YOUTUBE_API_KEY": "@youtube_api_key"
-  },
-  "headers": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "X-Requested-With, Content-Type, Accept" }
-      ]
+      "src": "/(.*)",
+      "dest": "app.py"
     }
   ]
 }
