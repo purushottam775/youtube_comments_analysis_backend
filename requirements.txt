@@ -27,7 +27,6 @@ protobuf==5.29.3
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pyparsing==3.2.1
-python-dotenv==0.19.0
 regex==2024.11.6
 requests>=2.26.0
 rsa==4.9
